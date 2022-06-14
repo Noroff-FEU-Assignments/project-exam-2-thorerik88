@@ -1,0 +1,16 @@
+@import '../../global/variables.module.scss';
+
+.ad {
+  background: $color-primary;
+  color: white;
+  display: flex;
+  justify-content: center;
+
+  .container {
+    max-width: 90%;
+  }
+
+  p {
+    margin: 9px 0;
+  }
+}

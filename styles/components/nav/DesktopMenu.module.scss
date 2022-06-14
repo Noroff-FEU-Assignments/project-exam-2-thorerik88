@@ -1,0 +1,29 @@
+@import '../../global/variables.module.scss';
+
+.menuWrapper {
+  display: none;
+  justify-content: flex-end;
+
+  @include tablet-landscape {
+    display: flex;
+  }
+
+  .menu {
+    display: flex;
+    align-items: center;
+
+    li {
+      margin-left: 15px;
+      padding: 0 5px 0 5px;
+      
+      border-bottom: 2px solid white;
+      cursor: pointer;
+      transition: .2s ease-in-out all;
+    }
+
+    li:hover {
+      
+      border-bottom: 2px solid $color-primary;
+    }
+  }
+}

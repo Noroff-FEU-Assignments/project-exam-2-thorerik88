@@ -1,0 +1,55 @@
+@import '../../global/variables.module.scss';
+
+.wrapper {
+  max-width: 350px;
+  margin: 0 auto;
+
+  .form {
+    margin: 50px auto;
+    background: $color-bg;
+    border: none;
+  
+    .heading {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: $color-primary;
+      color: white;
+      padding: 2px 0;
+  
+      h2 {
+        margin-left: 10px;
+      }
+    }
+  
+    .formWrapper {
+      margin: 0 auto;
+      flex-direction: column;
+      padding: 40px 0;
+      max-width: 80%;
+  
+      .icon {
+        padding-right: 4px;
+      }
+
+      .inputs {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+  
+      .success, .error {
+        padding-top: 1rem;
+        text-align: center;
+      }
+  
+      .success {
+        color: $color-green;
+      }
+  
+      .error {
+        color: $color-secondary;
+      }
+    }
+  }
+}

@@ -1,0 +1,138 @@
+@import '../../global/variables.module.scss';
+
+.breadcrumbs {
+  display: flex;
+
+  li {
+    margin: 0 5px;
+  }
+
+  li:first-of-type {
+    margin: 0 0 0 5px;
+  }
+
+  @include tablet-landscape {
+    display: none;
+  }
+}
+
+.adminSideMenu {
+  
+  @include tablet-landscape {
+    display: flex;
+    justify-content: space-between;  
+  }
+
+  .sideMenu {
+    display: none;
+    flex: 1;
+    padding-right: 1rem;
+    border-right: 1px solid #808080;
+
+    @include tablet-landscape {
+      display: flex;
+    }
+  }
+
+  .mainContent {
+
+    .wrapper {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      
+    
+    
+      .heading, .item {
+        display: flex;
+        justify-content: space-between;
+        text-align: left;
+
+        p, a {
+          display: inline-block;
+          width: 50%;
+          padding: 5px;
+          margin: 0;
+          border: 1px solid $color-primary;
+        }
+
+        a {
+          border-right: none;
+        }
+    
+        p:nth-of-type(even) {
+          border-left: none;
+          border-right: none;
+          width: 35%;
+        }
+    
+        p:last-of-type, a:last-of-type {
+          width: 30%;
+        }
+
+        p:hover {
+          cursor: pointer;
+        }
+      }
+    
+      .heading {
+        background: $color-primary;
+        color: white;
+      }
+
+      .item:hover {
+        background: $color-primary;
+        color: white;
+      }
+    
+      .item:nth-of-type(odd) {
+        background-color: $color-bg;
+      }
+
+      .item:nth-of-type(odd):hover {
+        background: $color-primary;
+        color: white;
+      }
+    
+      .item:not(:first-of-type) {
+        
+        p, a {
+          border-bottom: none;
+        }
+      }
+    
+      .item:last-of-type {
+    
+        p, a {
+          border-bottom: 1px solid $color-primary;
+        }
+      }
+    }
+
+    .details {
+      background: $color-bg;
+      padding: 10px 30px;
+      
+
+      .detailsItem {
+        display: flex;
+        justify-content: space-between;
+        
+        p {
+          flex: 1;
+        }
+
+        p:first-of-type {
+          font-weight: 700;
+        }
+      }
+    }
+
+    @include tablet-landscape {
+      display: flex;
+      flex-direction: column;
+      flex: 4;
+      margin: 20px 5rem 0;
+    }
+  }
+}

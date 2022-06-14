@@ -1,0 +1,84 @@
+@import '../../global/variables.module.scss';
+
+.formWrapper {
+  margin: 50px auto;
+  padding: 0 0 30px;
+  background-color: $color-bg;
+  width: 90%;
+  border-radius: 11px 11px 10px 10px;
+  box-shadow: 5px 5px 10px rgba(0,0,0,.5);
+
+  .heading {
+    background: $color-secondary;
+    color: white;
+    text-align: center;
+    border-radius: 10px 10px 0 0;
+    padding: 5px 0 3px;
+    margin-bottom: 30px;
+
+    h1 {
+      margin: 0;
+    }
+  }
+
+  @include tablet-portrait {
+    max-width: 430px;
+    margin-top: 50px;
+  }
+
+  .form {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin: auto;
+    padding: 0 10px;
+
+    .searchWrap {
+      position: relative;
+
+      .icon {
+        color: #808080;
+        position: absolute;
+        top: 8px;
+        left: 10px;
+        font-size: $fontAwesome-mobile;
+      }
+
+      input {
+        background-color: white;
+        font-size: $sub-heading;
+        padding-left: 45px;
+        height: 40px;
+        width: 100%;
+      }
+
+      ul {
+        background: white;
+        position: absolute;
+        left: 0;
+        top: 40px;
+        width: 100%;
+        border-radius: 0 0 10px 10px;
+
+        li {
+          padding: 7px;
+          cursor: pointer;
+        }
+
+        li:last-child {
+          border-radius: 0 0 10px 10px;
+        }
+
+        li:hover {
+          background: $color-primary;
+          
+          a {
+            color: white;
+          }
+        }
+      }
+    }
+    
+  }
+}
+

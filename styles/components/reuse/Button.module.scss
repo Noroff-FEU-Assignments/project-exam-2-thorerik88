@@ -1,0 +1,81 @@
+@import '../../global/variables.module.scss';
+
+.book, .submit {
+  color: white;
+  background: $color-secondary;
+  margin-top: 1.5rem;
+  text-align: center;
+  // padding: 12px;
+  cursor: pointer;
+}
+
+.book input, .submit input {
+  cursor: pointer;
+}
+
+.submit:hover, .book:hover {
+  opacity: .8;
+}
+
+.submit:active, .submit input:active, .book:active, .book input:active {
+  background-color: $color-primary;
+  color: white;
+}
+
+.submit {
+  font-size: $text;
+  border-radius: 40px;
+  border: none;
+  padding: 12px;
+
+  .buttonWrapper {
+
+    input {
+      display: flex;
+      justify-content: center;
+      height: 100%;
+      width: 100%;
+    }
+  }
+}
+
+.book {
+  display: flex;
+  flex-direction: column;
+  font-size: $main-heading;
+  font-weight: 700;
+  border: 5px solid $color-primary;
+  border-radius: 40px 0 0 40px;
+
+  .buttonWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+    a {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 100%;
+      width: 100%;
+      padding: 12px;
+  
+      .iconBg {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        float: left;
+        background: $color-primary;
+        border-radius: 100%;
+        width: 40px;
+        height: 40px;
+    
+        .icon {
+          font-size: $fontAwesome-btnIcon;
+          margin-bottom: 3px;
+        }
+      }
+    }
+    
+  }
+}

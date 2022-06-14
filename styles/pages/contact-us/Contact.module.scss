@@ -1,0 +1,66 @@
+@import '../../global/variables.module.scss';
+
+.wrapper {
+  max-width: 440px;
+  margin: 0 auto;
+
+  .form {
+    background: $color-bg;
+    border: none;
+    border-radius: 10px;
+  
+    .heading {
+      background: $color-primary;
+      color: white;
+      text-align: center;
+      padding: 10px;
+      border-radius: 10px 10px 0 0;
+  
+      h2 {
+        font-weight: 400;
+        margin: 0;
+      }
+    }
+  
+    .contentWrapper {
+      display: flex;
+      margin: 0 auto;
+      flex-direction: column;
+      padding: 40px 0;
+      max-width: 80%;
+  
+      label {
+        margin: 20px 0 0;
+      }
+  
+      label:first-of-type {
+        margin: 0;
+      }
+  
+      
+    }
+  }
+}
+
+.danger {
+  border: 1px solid $color-secondary !important;
+}
+
+.message {
+  visibility: hidden;
+}
+
+.messageVisible {
+  visibility: visible;
+
+  .error {
+    visibility: visible;
+    color: $color-secondary;
+  }
+
+  .success {
+    color: $color-green;
+  }
+}
+
+
