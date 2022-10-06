@@ -36,7 +36,7 @@ npm install
 
 ### Running
 To run the app, run the following commands:
-'''bash
+'''
 npm run dev
 '''
 Now open url https://localhost:3000 in your browser.
