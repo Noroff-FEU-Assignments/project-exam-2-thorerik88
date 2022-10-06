@@ -5,12 +5,16 @@
 A simple overview of the use/purpose of the project.
 
 ## Description
-Purpose of the site is to give potential visitors a site to easilly book an accomodation for their holiday
-and the accomodation owner to handle potential visitors' inquires
+A local tourism agency in Bergen is looking for a new website (Holidaze) for visitors to find accomodation and send enquiries to admin/owners.
+Meaning there has to be a visitor version and an admin version.
+API has to be used to store data and use a public Headless CMS.
 
-- Login functionallity
-- Search in accomodations
-- List hotels
+- Homepage with login possibilities for admins
+- Searchbar
+- Results page displaying various hotels
+- Descriptive page showing more information about the hotel, when clicked
+- Enquires/messages is handled in the admin page
+- It's possible for admins to add hotels
 
 ## Build with
 - React.js/Next.js
@@ -32,8 +36,10 @@ npm install
 ### Running
 To run the app, run the following commands:
 '''bash
-npm run start
+npm run dev
 '''
+Now open url https://localhost:3000 in your browser.
+
 
 ## Contact
 
