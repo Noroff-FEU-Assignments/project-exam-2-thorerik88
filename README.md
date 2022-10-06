@@ -16,9 +16,10 @@ API has to be used to store data and use a public Headless CMS.
 - Enquires/messages is handled in the admin page
 - It's possible for admins to add hotels
 
-## Build with
+## Built with
 - React.js/Next.js
 - SASS
+- API (Firebase)
 
 ## Getting Started
 ### Installing
