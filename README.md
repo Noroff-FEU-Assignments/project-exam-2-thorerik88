@@ -25,20 +25,20 @@ API has to be used to store data and use a public Headless CMS.
 ### Installing
 
 1. Clone the repo:
-''' bash
+```
 git clone https://github.com/Noroff-FEU-Assignments/project-exam-2-thorerik88.git
-'''
+```
 
 2. Install the dependencies:
-'''
+```
 npm install
-'''
+```
 
 ### Running
 To run the app, run the following commands:
-'''
+```
 npm run dev
-'''
+```
 Now open url https://localhost:3000 in your browser.
 
 
